@@ -6,9 +6,18 @@ import {
   Button,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { useQuizData } from "../context/QuizDataContext";
 import { QuizCategory } from "../database/quizData.types";
 
-const QuizRules = ({ quizGame }: { quizGame: QuizCategory }) => {
+const QuizRules = ({
+  quizGame,
+  setIsQuizStarted,
+}: {
+  quizGame: QuizCategory;
+  setIsQuizStarted: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  const { dispatch } = useQuizData();
+
   return (
     <>
       <Card className="quiz-rules-card" variant="outlined">
@@ -46,6 +55,10 @@ const QuizRules = ({ quizGame }: { quizGame: QuizCategory }) => {
             size="small"
             variant="contained"
             color="primary"
+            onClick={() => {
+              setIsQuizStarted(true);
+              dispatch({ type: "RESET_SCORE" });
+            }}
           >
             Start Quiz
           </Button>

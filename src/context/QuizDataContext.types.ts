@@ -26,7 +26,7 @@ export type ActionType =
     }
   | {
       type: "DECREASE_SCORE";
-      payload: number;
+      payload: number | undefined;
     }
   | {
       type: "RESET_SCORE";

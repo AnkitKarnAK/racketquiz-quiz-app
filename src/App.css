@@ -334,6 +334,59 @@ button.button-disabled{
 
 
 
+/** Quiz QUESTIONS Starts **/
+
+.quiz-question-card{
+  width: 50rem;
+  max-width: calc(100% - 2rem);
+  border: 1px solid var(--primary-color) !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+}
+.quiz-question-card-header{
+  display: flex;
+  justify-content: space-between;
+}
+.quiz-question-button-container{
+  display: flex;
+  justify-content: center;
+}
+.quiz-question-next-button{
+  width: 100%;
+  
+}
+
+.quiz-option{
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+.quiz-option:disabled{
+  cursor: default;
+}
+
+.option-color-success{
+  color: rgb(1 78 52);
+  background-color: rgba(16, 185, 129, 0.2);
+  border-color: rgb(1 78 52);
+}
+.option-color-error{
+  color: rgb(134 0 0);
+  background-color: rgba(239, 68, 68, 0.2);
+  border-color: rgb(134 0 0);
+}
+
+/** Quiz QUESTIONS Starts **/
+
+
+
 @media screen and (min-width: 480px) {
   .quiz-category-banner{
     display: flex;

@@ -7,6 +7,7 @@ export function quizReducer(state: InitialStateType, action: ActionType) {
     case "INCREASE_SCORE":
       return { ...state, score: state.score + action.payload };
     case "DECREASE_SCORE":
+      if (action.payload === undefined) return state;
       return { ...state, score: state.score - action.payload };
     case "RESET_SCORE":
       return { ...state, score: 0 };
