@@ -219,6 +219,45 @@ button.button-disabled{
 /** ERROR 404 PAGE Starts **/
 
 
+/** EMPTY ITEM Starts **/
+
+.empty-container{
+  width: 30rem;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.empty-image-container>img{
+  width: 100%;
+}
+
+.empty-container>.empty-content-head{
+  margin: 1rem auto;
+  font-size: 2rem;
+  color: #878787;
+}
+.empty-container>.empty-content-text{
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.empty-container>a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.empty-container button{
+  font-size: 1rem;
+  width: 10rem;
+  margin: 1rem 0;
+}
+
+
+/** EMPTY ITEM Starts **/
+
+
 
 /** QUIZ-CATEGORY Starts **/
 
