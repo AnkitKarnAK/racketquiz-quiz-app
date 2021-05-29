@@ -179,3 +179,131 @@ button.button-disabled{
 
 
 /** NAVBAR CSS Ends **/
+
+
+/** ERROR 404 PAGE Starts **/
+
+.error-container{
+  width: 30rem;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.error-image-container>img{
+  width: 100%;
+}
+
+.error-container>.error-content-head{
+  margin: 1rem auto;
+  font-size: 2rem;
+  color: #878787;
+}
+.error-container>.error-content-text{
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.error-container>a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.error-container button{
+  font-size: 1rem;
+  width: 10rem;
+  margin: 1rem 0;
+}
+
+/** ERROR 404 PAGE Starts **/
+
+
+
+/** QUIZ-CATEGORY Starts **/
+
+.quiz-category-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.quiz-category-image-container{
+  width: 30rem;
+  max-width: 100%;
+}
+.quiz-category-image-container img{
+  width: 100%;
+  height: auto;
+}
+
+.quiz-category-headline{
+  margin: 1rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+.quiz-category-list{
+  display: flex;
+  flex-direction: column;
+  width: 51rem;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+.quiz-category-card{
+  width: 15rem;
+  margin: 1rem auto;
+  border: 1px solid var(--primary-color) !important;
+}
+.quiz-category-card a{
+  width: 100%;
+}
+
+.quiz-category-card-button{
+  width: 100%;
+}
+
+
+
+/** QUIZ-CATEGORY Ends **/
+
+
+/** QUIZ RULES Starts **/
+
+.quiz-rules-card{
+  border: 1px solid var(--primary-color) !important;
+  width: 30rem;
+  max-width: calc(100% - 2rem);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--light-color) !important;
+}
+.quiz-rules-button-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.quiz-rules-button{
+  width: 10rem;
+}
+
+/** QUIZ RULES Starts **/
+
+
+
+@media screen and (min-width: 480px) {
+  .quiz-category-banner{
+    display: flex;
+    flex-direction: row;
+  }
+  .quiz-category-list{
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+}

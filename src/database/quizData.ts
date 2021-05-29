@@ -4,7 +4,7 @@ export const quizData: Quiz = {
   category: [
     {
       _id: "sj3r9iyeyca",
-      categoryName: "basic",
+      categoryName: "Basic",
       totalQuestions: 10,
       questions: [
         {
@@ -190,6 +190,96 @@ export const quizData: Quiz = {
             },
           ],
           points: 5,
+        },
+      ],
+    },
+    {
+      _id: "kb37h8mfmy8",
+      categoryName: "Intermediate",
+      totalQuestions: 2,
+      questions: [
+        {
+          _id: "nvmkcexpkl",
+          questionNumber: 1,
+          question: "A shuttle tipped during play does count as a hit?",
+          options: [
+            {
+              _id: "ftv5g1dbv7",
+              text: "Yes",
+              isRight: true,
+            },
+            {
+              _id: "t9xfyr1hmy8",
+              text: "No",
+              isRight: false,
+            },
+          ],
+          points: 5,
+          negativePoints: 2,
+        },
+        {
+          _id: "1q01kajnpws",
+          questionNumber: 2,
+          question: "Only one hit per side is allowed during play?",
+          options: [
+            {
+              _id: "7alufavafso",
+              text: "Yes",
+              isRight: true,
+            },
+            {
+              _id: "wjmefwqrt7z",
+              text: "No",
+              isRight: false,
+            },
+          ],
+          points: 5,
+          negativePoints: 2,
+        },
+      ],
+    },
+    {
+      _id: "d337h8mfgg5",
+      categoryName: "Advance",
+      totalQuestions: 2,
+      questions: [
+        {
+          _id: "sdmkcdxgf3",
+          questionNumber: 1,
+          question: "A shuttle tipped during play does count as a hit?",
+          options: [
+            {
+              _id: "fvv5g1dbc3",
+              text: "Yes",
+              isRight: true,
+            },
+            {
+              _id: "3cxfyr1hmcv",
+              text: "No",
+              isRight: false,
+            },
+          ],
+          points: 5,
+          negativePoints: 3,
+        },
+        {
+          _id: "3cd0kajnpce",
+          questionNumber: 2,
+          question: "Only one hit per side is allowed during play?",
+          options: [
+            {
+              _id: "3vlufavav4",
+              text: "Yes",
+              isRight: true,
+            },
+            {
+              _id: "sfmefwqrv4x",
+              text: "No",
+              isRight: false,
+            },
+          ],
+          points: 5,
+          negativePoints: 3,
         },
       ],
     },
