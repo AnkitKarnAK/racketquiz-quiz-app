@@ -2,6 +2,8 @@ import { useQuizData } from "../context/QuizDataContext";
 import { useParams } from "react-router";
 import NoQuizFound from "./NoQuizFound";
 import { QuestionWithAnswerCard } from "./QuestionWithAnswerCard";
+import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const ShowAnswers = () => {
   const { state } = useQuizData();
@@ -24,6 +26,16 @@ const ShowAnswers = () => {
               />
             );
           })}
+          <Link to="/">
+            <Button
+              variant="contained"
+              color="primary"
+              size="small"
+              className="answers-more-quiz-button"
+            >
+              More quizzes
+            </Button>
+          </Link>
         </div>
       ) : (
         <NoQuizFound />

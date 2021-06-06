@@ -399,6 +399,12 @@ button.button-disabled{
   font-size: 1.5rem;
   text-align: center;
 }
+.answers-more-quiz-button{
+  width: 10rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .question-answer-card{
   width: 50rem;
