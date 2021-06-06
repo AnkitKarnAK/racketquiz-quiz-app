@@ -415,6 +415,10 @@ button.button-disabled{
   margin: 1rem;
 }
 
+.question-answer-card .quiz-option{
+  cursor: default;
+}
+
 /** QUESTIONS ANSWER ENds **/
 
 
