@@ -383,7 +383,32 @@ button.button-disabled{
   border-color: rgb(134 0 0);
 }
 
-/** Quiz QUESTIONS Starts **/
+/** Quiz QUESTIONS Ends **/
+
+
+
+/** QUESTIONS ANSWER Starts **/
+
+.answers-card{
+  width: 50rem;
+  max-width: 100%;
+  padding: 0 auto;
+}
+
+.answers-score{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.question-answer-card{
+  width: 50rem;
+  max-width: calc(100% - 2rem);
+  border: 1px solid var(--primary-color) !important;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+/** QUESTIONS ANSWER ENds **/
 
 
 
