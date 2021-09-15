@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import profileIcon from "../assets/profile-icon.svg";
+// import profileIcon from "../assets/profile-icon.svg";
 import quizBulbIcon from "../assets/light-bulb.svg";
 
 export const Navbar = () => {
@@ -24,7 +24,7 @@ export const Navbar = () => {
             </button>
           </div>
 
-          <div className="button-badge-container">
+          {/* <div className="button-badge-container">
             <button className="nav-button">
               <NavLink
                 to="/profile"
@@ -35,7 +35,7 @@ export const Navbar = () => {
                 Profile
               </NavLink>
             </button>
-          </div>
+          </div> */}
         </div>
       </nav>
     </>

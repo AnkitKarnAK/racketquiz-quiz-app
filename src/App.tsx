@@ -6,13 +6,27 @@ import QuizCategories from "./components/pages/QuizCategories";
 import Error404 from "./components/pages/Error404";
 import PlayQuiz from "./components/pages/PlayQuiz";
 import { useQuizData } from "./context/QuizDataContext";
-import { quizData } from "./database/quizData";
+// import { quizData } from "./database/quizData";
+import { Quiz } from "./database/quizData.types";
+import axios from "axios";
 
 function App() {
   const { dispatch } = useQuizData();
 
+  const getQuizs = async () => {
+    const res = await axios.get<Quiz>(
+      "https://racketquizapi.ankitkarn.repl.co/quizs"
+    );
+    return res.data;
+  };
+
+  getQuizs();
+
   useEffect(() => {
-    dispatch({ type: "SET_CATEGORIES", payload: quizData.category });
+    (async () => {
+      const quizs = await getQuizs();
+      dispatch({ type: "SET_CATEGORIES", payload: quizs.category });
+    })();
   }, [dispatch]);
 
   return (
